@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curetreat</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+</head>
+
+<header>
+    <img class="logo" src="images/logo_transparent.png" alt="logo">
+    <nav>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <ul class="nav-links">
+            <li class="aheader"><a class="aheader" href="index.html">Home</a></li>
+            <li class="aheader"><a class="aheader" href="programma.html"> Programma </a> </li>
+            <li class="aheader"><a class="aheader" href="infoprijzen.html"> Info en Prijzen</a> </li>
+            <li class="aheader"><a class="aheader" href="mondi.html">Accomodatie</a></li>
+            <li class="aheader"><a class="aheader" href="over.html"> Over Ons</a> </li>
+        </ul>
+    </nav>
+    <a class="cta" href="signup.html"><button>Aanmelden</button></a>
+</header>
+
+
+
+<body>
+
+    <hr>
+
+    <div class="formulier">
+
+        <form id="contactform" action="https://formspree.io/f/mzbwzvkw" method="post">
+
+            <h2> Meld je aan: </h2>
+            <br>
+            <br>
+
+            <label for="naam">
+                <b class="schuif">Uw Naam:</b>
+            </label>
+            <br>
+            <input id="naam" type="text" name="naam">
+            <br>
+            <br>
+
+
+
+            <label for="adres">
+                <b class="schuif">Uw Adres:</b>
+            </label>
+            <br>
+            <input id="adres" type="text" name="Adres" placeholder="straatnaam en huisnummer">
+            <br>
+            <br>
+
+
+
+            <label for="postcode">
+                <b class="schuif">Uw Postcode:</b>
+            </label>
+            <br>
+            <input id="postcode" type="text" name="postcode" placeholder="postcode">
+            <br>
+            <br>
+
+
+            <label for="geboortedatum">
+                <b class="schuif">Uw Geboortedatum</b>
+            </label>
+            <br>
+            <input id="geboortedatum" type="date" name="geboortedatum" max="2080-12-31">
+            <br>
+            <br>
+
+
+            <label for="geslacht">
+                <b class="schuif"> Uw Geslacht:</b>
+            </label>
+            <br>
+            <input type="radio" id="geslacht" name="geslacht" value="man" checked> Man
+            <input type="radio" name="geslacht" value="vrouw">Vrouw
+            <br>
+            <br>
+
+            <label for="e-mail">
+                <b class="schuif">Uw E-mail adres:</b>
+            </label>
+            <br>
+            <input id="e-mail" type="text" name="e-mail" placeholder="e-mail adres">
+            <br>
+            <br>
+
+            <label for="telefoonnummer">
+                <b class="schuif">Uw telefoonnummer:</b>
+            </label>
+            <br>
+            <input id="telefoonnummer" type="tel" name="telefoonnummer">
+
+            <br>
+            <br>
+            <label for="personen">
+                <b class="schuif">Aantal personen:</b>
+            </label>
+            <br>
+            <input type="number" name="personen" min="1" max="10">
+            <br>
+            <br>
+            <label for="bericht">
+                <b class="schuif">Aanvullende informatie:</b>
+            </label>
+            <br>
+            <input id="bericht" maxlength="1500" placeholder="vragen, opmerkingen">
+            <br>
+            <br>
+
+            <label for="bericht">
+                <b class="schuif">Dieetwensen of allergieen:</b>
+            </label>
+            <br>
+            <input id="bericht" maxlength="1500" placeholder="dieetwensen, allergieen">
+            <br>
+            <br>
+            <label for="datum">
+                <b class="schuif">Gewenste aankomstdatum:</b>
+            </label>
+            <br>
+            <br>
+            <input type="radio" id="datum" name="datum" value="zaterdag" checked> Zaterdag 23 November 2023 <br>
+            <input type="radio" name="datum" value="zondag" checked> Zondag 24 November 2023
+
+            <br>
+            <br>
+
+            <b class="schuif">Gewenste accomodatievorm:</b>
+            </label>
+            <br>
+            <br>
+            <input type="radio" id="acco" name="acco" value="1pers" checked> 1 persoonskamer <br>
+            <input type="radio" name="acco" value="2pers" checked> 2 persoonskamer <br>
+            <input type="radio" name="acco" value="2pers" checked> Gedeelde kamer
+
+
+            <br>
+            <br>
+
+            <label for="bericht">
+                <b class="schuif">Motivatie voor retrait:</b>
+            </label>
+            <br>
+            <input id="bericht" maxlength="3000" placeholder="Doel van retrait">
+            <br>
+            <br>
+
+            <button type="submit" name="verzendknop"><strong>Verzend</strong></button>
+    </div>
+
+
+
+    <section class="footer">
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+
+        <p class="copyright">Copyright &copy JN Webdevelopment in opdracht van Curetreat 2022 </p>
+
+    </section>
+
+</body>
+
+
+</html>
