@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Gochi+Hand&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Marck+Script&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -9,24 +11,27 @@
 
 }
 
+/*header-dropdown*/
+
+
 /* header */
 
 .aheader {
 
     font-weight: 900;
-    font-size: 27px;
+    font-size: 30px;
     color: black;
     text-decoration: none;
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'Marck Script', cursive;
 
 }
 
 
 .logo {
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 180px;
     cursor: pointer;
-    padding-top: 15px;
+    padding-top: 30px;
 
 }
 
@@ -38,7 +43,7 @@
 
 .nav-links li {
     display: inline-block;
-    padding: 0px 30px;
+    padding: 0px 40px;
 }
 
 .nav-links li .aheader {
@@ -53,7 +58,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: ivory;
+
 
 }
 
@@ -77,23 +82,36 @@ button {
 /* Body */
 
 body {
-    background-color: ivory;
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Lora', serif;
+}
+
+.bodyindex {
+    background-color: white;
+
+
 }
 
 .main-content {
-    border: 1px solid black;
+
     padding: 5px;
     margin: 10px;
     background-color: white;
 
+
 }
 
 .fotomain {
-    margin-top: 80px;
-    height: 400px;
-    width: 420px;
+    margin-top: 2.2em;
+    height: auto;
+    width: 90%;
+    max-width: 100%;
+    display: block;
+    padding-top: 50px;
 
+}
+
+.fotomob {
+    display: none;
 }
 
 .container-1 {
@@ -124,7 +142,7 @@ h2 p {
 
 .footer {
     padding: 40px 0;
-    background-color: ivory
+    background-color: white;
 }
 
 .footer .social {
@@ -485,4 +503,74 @@ h2 p {
     height: 100px;
     padding: 5px;
     margin-left: 5px;
+}
+
+/*Media Queries*/
+
+@media (max-width:1000px) {
+    .fotomain {
+        display: none;
+    }
+
+    .logo {
+        width: 150px;
+        height: 100px;
+        padding-left: 15px;
+    }
+
+    .aheader {
+        font-size: 15px;
+
+
+    }
+
+    .container-1 {
+        display: block;
+    }
+
+    .fotomob {
+        display: block;
+        height: 250px;
+        width: 250px;
+        padding-left: 55px;
+        padding-bottom: 20px;
+    }
+
+    .formulier {
+        display: block;
+        border: none;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .nav-links {
+        list-style: inside;
+        padding-top: 15px;
+        padding-left: 5px;
+        line-height: 30px;
+
+
+    }
+
+    button {
+        width: 150px;
+        height: 30px;
+        padding: 5px 25px;
+        margin-right: 200px;
+        border: 1px, solid, black;
+        border-radius: 50px;
+        cursor: pointer;
+        background-color: black;
+        font-size: 15px;
+        color: white;
+    }
+
+    .cta {
+        margin: 95px;
+    }
+
+
+
 }
