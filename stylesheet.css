@@ -372,6 +372,10 @@ h2 p {
     justify-content: space-around;
 }
 
+.yogamob {
+    display: none;
+}
+
 .yoga2 {
     height: 320px;
     width: 400px;
@@ -379,9 +383,6 @@ h2 p {
     margin: 10px;
 }
 
-.yogamob {
-    display: none;
-}
 
 .etenmob {
     display: none;
