@@ -442,6 +442,14 @@ h2 p {
     margin-top: 25px;
 }
 
+.fotoinfomob {
+    display: none;
+}
+
+.fotoinfo2mob {
+    display: none;
+}
+
 .fotoinfo3 {
     align-items: center;
     width: 700px;
@@ -536,7 +544,7 @@ h2 p {
     }
 
     .aheader {
-        font-size: 15px;
+        font-size: 20px;
 
 
     }
@@ -633,6 +641,50 @@ h2 p {
 
     }
 
+    .flexinfo {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .fotoinfo1 {
+        display: none;
+
+    }
+
+    .info-2 {
+        border: none;
+        margin-left: 75px;
+        margin-right: 75px;
+        margin-top: 25px;
+        padding: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .fotoinfomob {
+        display: block;
+        width: 250px;
+        height: 175px;
+
+    }
+
+    .fotoinfo2 {
+        display: none;
+    }
+
+    .info-3 {
+        border: none;
+    }
+
+    .fotoinfo2mob {
+        display: block;
+        width: 250px;
+        height: 175px;
+
+    }
+
+    .fotoinfo3 {
+        display: none;
+    }
 
 }
