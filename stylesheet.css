@@ -372,6 +372,10 @@ h2 p {
     justify-content: space-around;
 }
 
+.etenmob {
+    display: none;
+}
+
 .yogamob {
     display: none;
 }
@@ -384,9 +388,6 @@ h2 p {
 }
 
 
-.etenmob {
-    display: none;
-}
 
 .eten1 {
     height: 320px;
